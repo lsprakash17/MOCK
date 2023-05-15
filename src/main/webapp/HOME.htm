@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="insert" method="post">
+		<table border="1">
+			<tr>
+				<th>Name:</th>
+				<td><input type="text" name="name" required="required"></td>
+			</tr>
+			<tr>
+				<th>Email:</th>
+				<td><input type="email" name="email" required="required"></td>
+			</tr>
+			<tr>
+				<th>Mobile:</th>
+				<td><input type="text" name="mobile" pattern="{0-9}[10]"
+					required="required"></td>
+			</tr>
+			<tr>
+				<td><button type="reset">Cancel</button></td>
+				<td><button>Submit</button></td>
+			</tr>
+		</table>
+	</form>
+	<br>
+	<form action="fetchid" method="get">
+		<table>
+			<tr>
+				<th>Enter the id:</th>
+				<td><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td><button>Submit</button></td>
+			</tr>
+		</table>
+	</form>
+	<br>
+		<form action="fetchname" method="get">
+		<table>
+			<tr>
+				<th>Enter the Name:</th>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td><button>Submit</button></td>
+			</tr>
+		</table>
+	</form>
+	<br>
+<a href="fetchall"><button>Fetch All Data</button></a><br><br>
+</body>
+</html>
